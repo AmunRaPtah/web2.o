@@ -1,0 +1,220 @@
+/* General Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #4a4a4a; /* Dark Gray */
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular weight */
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+a {
+    color: #6dbe45; /* Primary Green */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h1 a {
+    font-size: 2.5rem;
+    font-weight: 700; /* Bold */
+    color: #6dbe45; /* Primary Green */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.hero-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-slider .slide {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-slider .slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    z-index: 2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Services Section */
+#services {
+    padding: 50px 0;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Learning Center Section */
+#learning-center {
+    padding: 50px 0;
+}
+
+.learning-center-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.learning-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Products Section */
+#products {
+    padding: 50px 0;
+}
+
+.product-carousel {
+    /* Styling for the product carousel */
+}
+
+.product-item {
+    /* Styling for each product item */
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) { 
+    .container {
+        max-width: 90%; 
+    }
+
+    .hero-slider .slide-content {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .service-grid, .learning-center-content {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    h2 {
+        font-size: 2rem; 
+    }
+
+    h3 {
+        font-size: 1.8rem; 
+    }
+
+    nav ul {
+        text-align: center; 
+    }
+
+    nav li {
+        display: block; 
+        margin: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .hero-slider .slide {
+        height: 300px; 
+    }
+
+    .service-grid, .learning-center-content {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider .slide {
+        height: 250px; 
+    }
+
+    .service-grid, .learning-center-content {
+        grid-template-columns: 1fr; 
+    }
+}
